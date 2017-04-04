@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+This page makes a Mad Lib story. For an example of a similar page, go here:
+http://www.redkid.net/madlibs/
+-->
+<html>
+<head>
+<title>My MadLib</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+</head>
+<body>
+<h1>My MadLib</h1>
+<div class="data">
+	<p class="instructions">Enter a value into each field. Then press 'Make Story' to read the story you made.</p>
+	<!--
+	Request that the user type in at least 15 words in the form below. Ask for the
+	words by part of speach (noun, verb, adjective, adverb, proper noun, etc.) You
+	can also ask for things like places. Use field ids like noun1, noun2, verb1, etc.
+	Then make a button with the text "Make Story". The Make Story button should call
+	your makeStory() function which gets all of the form data and then builds and
+	displays your finished story.
+	-->
+	<form>
+  	Adjective <input type="text" id='adjective1'> <br>
+  	Adjective <input type="text" id='adjective2'> <br>
+  	Adjective <input type="text" id='adjective3'> <br>
+  	Adjective <input type="text" id='adjective4'> <br>
+  	Adjective <input type="text" id='adjective5'> <br>
+  	Celebrity <input type="text" id='celebrity1'> <br>
+  	Noun <input type="text" id='noun1'> <br>
+  	Noun <input type="text" id='noun2'> <br>
+  	Noun <input type="text" id='noun3'> <br>
+  	Noun <input type="text" id='noun4'> <br>
+  	Type of Food <input type="text" id='type_of_food1'> <br>
+  	Type of Food <input type="text" id='type_of_food2'> <br>
+  	Type of Food <input type="text" id='type_of_food3'> <br>
+  	<input type="button" onclick="makeStory()" value="Make Story">
+	</form>
+</div>
+<div class="story">
+	<h2 id="title"></h2>
+	<p id="one">Complete the form to the left to see a story.</p>
+	<p id="two"></p>
+	<p id="three"></p>
+</div>
+<!-- don't forget to link to the story_maker.js file here. -->
+ <script src="story_maker.js"></script>
+</body>
+</html>
